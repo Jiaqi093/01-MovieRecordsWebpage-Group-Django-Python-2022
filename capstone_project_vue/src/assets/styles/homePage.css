@@ -1,0 +1,731 @@
+body{
+  margin: 0;
+}
+
+.body{
+
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    height: 100vh;
+    width: 100%;
+
+    background-color:#FAFBFF;
+
+    margin-top:0px;
+    margin-left:0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    column-gap: 15px;
+
+    width:100%;
+    height:90vh;
+
+
+    background-color:#FAFBFF;
+}
+
+
+.imagePreviewWrapperH {
+  width: 250px;
+  height: 100px;
+  display: block;
+  cursor: pointer;
+  margin: 0 auto 30px;
+  background-size: cover;
+  background-position: center center;
+
+
+}
+
+.leftSideFunctionsArea{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    height:90%;
+    width: 25%;
+    margin-top: 25px;
+}
+
+.centralFunctionsArea{
+
+    width: 60%;
+    height: 100%;
+    z-index: 1;
+    margin-top: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background-color:white;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+
+}
+
+.rightSideFunctionsArea{
+    height:90%;
+    width:25%;
+    margin-top: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+.leftSideFunctionsArea .homePersonalProfile {
+
+    height:70px;
+    width:70px;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    margin-top: 20px;
+
+
+}
+
+.leftSideFunctionsArea .homePersonalProfile .img{
+  height:70px;
+  width:70px;
+
+}
+
+.leftSideFunctionsArea .leftAllFunction{
+  height: 80%;
+  width:80%;
+}
+
+
+.leftSideFunctionsArea .leftAllFunction .leftFunctions{
+
+    width:100%;
+    margin-top: 20px;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border: 1px solid #171B72;
+    background-color:white;
+
+    border-radius: 5px;
+
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2);
+
+}
+
+.leftSideFunctionsArea .leftAllFunction .leftFunctionsFilter{
+
+  width:100%;
+    margin-top: 20px;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    border: 1px solid #171B72;
+    background-color:white;
+
+    border-radius: 5px;
+
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+.leftSideFunctionsArea .leftAllFunction .leftFunctions .functionLink{
+    height: 5%;
+    width:90%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: 10px;
+
+}
+.leftSideFunctionsArea .leftAllFunction .leftFunctions .functionLink a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #171B72;
+}
+
+
+.leftSideFunctionsArea .leftAllFunction .leftFunctionsFilter .visibilityFilter{
+    height:15%;
+    width:90%;
+
+    color: #171B72;
+    font-weight: 100;
+    margin-top:10px;
+    margin-bottom:20px;
+    padding-bottom: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+
+
+}
+
+.leftSideFunctionsArea .leftAllFunction .leftFunctionsFilter .categoryFilter{
+    height:20%;
+    width:90%;
+    margin-top:10px;
+    color: #171B72;
+    font-weight: 100;
+
+
+}
+
+.leftSideFunctionsArea .leftAllFunction .leftFunctionsFilter .visibilityFilter h3, .leftSideFunctionsArea .leftFunctionsFilter .categoryFilter h3{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+
+    font-size: x-large;
+    margin-bottom:5px;
+    margin-top: 0px;
+
+    font-weight: 300;
+}
+
+
+
+.centralFunctionsArea .navigationBar{
+    height:10%;
+    width:100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+
+    column-gap: 10px;
+
+    border-bottom-style:solid;
+    border-color: #171B72;
+    border-width: 1px;
+}
+
+
+.centralFunctionsArea .navigationBar .navigationBar-Button{
+    margin-top: 4px;
+    height:100%;
+    width:40%;
+    position: relative;
+
+    color:#171B72;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: capitalize;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: #171B72;
+    text-decoration: none;
+  }
+
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #171B72;
+    text-decoration: none;
+    color: #171B72;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+
+    transform: scaleX(0);
+  }
+
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    color: #171B72;
+    text-decoration: none;
+  }
+
+
+.centralFunctionsArea .filterSection{
+    height: 15%;
+    width:100%;
+
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    column-gap: 10px;
+
+
+    background-color:red;
+}
+.centralFunctionsArea .post-wrapper{
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  text-decoration: none;
+}
+.centralFunctionsArea .post-wrapper .allPosts{
+
+    width:100%;
+
+    margin-top: 10px;
+    row-gap: 10px;
+    text-decoration: none;
+
+}
+
+
+
+/*.centralFunctionsArea .navigationBar a{
+    margin-top: 4px;
+    height:80%;
+    width:40%;
+    color:#171B72
+}*/
+
+
+.centralFunctionsArea .filterSection .buttons .search .mySearch{
+
+    background-image: url('../images/search.png');
+    background-position: 2px;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+
+    height:100%;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+
+}
+
+
+.centralFunctionsArea .post-wrapper .allPosts .post{
+    width:90%;
+    height:200px;
+
+    margin-top: 10px;
+    margin-left: 36px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+
+    border-bottom-style:solid;
+    border-color: #171B72;
+    border-width: 2px;
+
+}
+
+.centralFunctionsArea .post-wrapper .allPosts .post:hover{
+  background-color: #E6E6E6;
+  cursor: pointer;
+}
+
+.centralFunctionsArea .post-wrapper .allPosts .post .post-Left{
+
+
+    max-width: 136px;
+    max-height: 190px;
+
+    height:95%;
+    width:20%
+
+}
+
+.centralFunctionsArea .post-wrapper .allPosts .post .post-Left .thumbnail{
+
+  max-width: 136px;
+  max-height: 190px;
+
+}
+
+.centralFunctionsArea .post-wrapper .allPosts .post .post-Right{
+
+
+    height:95%;
+    width:75%;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    row-gap: 10px;
+
+}
+
+.centralFunctionsArea .post-wrapper .allPosts .post .post-Right .info{
+    height:80%;
+    width:90%;
+
+
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.centralFunctionsArea .post-wrapper .allPosts .post .post-Right .info .title{
+    font-weight: 200;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.centralFunctionsArea .post-wrapper .allPosts .post .post-Right .info .title a{
+
+  text-decoration: none;
+  color:#171B72
+}
+
+.centralFunctionsArea .post-wrapper .allPosts .post .post-Right .info .author,.centralFunctionsArea .allPosts .post .post-Right .info .read,
+.centralFunctionsArea .post-wrapper .allPosts .post .post-Right .info .score{
+    font-weight: 200;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.centralFunctionsArea .post-wrapper .allPosts .post .post-Right .info .comment{
+  overflow:hidden;
+}
+
+.centralFunctionsArea .post-wrapper .allPosts .post .post-Right .postOperation{
+    height:15%;
+    width:100%;
+
+
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    column-gap: 10px;
+
+    text-align: center;
+
+}
+
+
+
+
+.centralFunctionsArea .bottom-pagination{
+  display: flex;
+  justify-content: center;
+  height:7%;
+}
+
+.rightSideFunctionsArea .search{
+    width:90%;
+    height:50px;
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: black;
+}
+
+.rightSideFunctionsArea .search input{
+    background-image: url('../images/search.png');
+    background-position: 2px;
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+
+    height:80%;
+    width: 90%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+
+}
+
+.rightSideFunctionsArea .addPost{
+  width:90%;
+  height:50px;
+  margin-top: 15px;
+  box-shadow: 2px 2px black;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+
+
+}
+
+
+.rightSideFunctionsArea .addPost a{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left:20px;
+  column-gap: 10px;
+
+  text-decoration: none;
+  color: #171B72;
+}
+
+.rightSideFunctionsArea .addPost a .newPostIcon{
+
+  width:40px;
+  height:40px;
+
+}
+
+.rightSideFunctionsArea .addPost:hover, .rightSideFunctionsArea .addPost a:hover{
+  box-shadow: 5px 5px black;
+  left:-3px;
+  top:-3px;
+
+  background-color: #171B72;
+  color:white;
+  cursor:pointer;
+
+}
+
+.rightSideFunctionsArea .filter{
+  width:90%;
+  height:50px;
+  margin-top: 15px;
+
+}
+
+
+
+
+
+
+/*check boxes!!!!!!!!!!!!!!!!!!*/
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #171B72;
+    font-weight:200;
+
+    height:25px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+
+  }
+
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #171B72;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #171B72;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 6px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+
+
+/*footer shit*/
+.bubblefooter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    overflow-x: hidden;
+    background: #FAFBFF;
+
+    font-family: "Open Sans", sans-serif;
+
+    width:100%;
+    height:10%;
+    z-index: -1;
+
+    margin-top: 30px;
+
+
+  }
+
+  .bubblefooter .footer {
+    z-index: 1;
+    --footer-background:#171B72;
+    display: grid;
+    position: relative;
+    width:90%;
+    height:10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bubblefooter .footer .bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1rem;
+    background: var(--footer-background);
+    filter: url("#blob");
+  }
+  .bubblefooter .footer .bubbles .bubble {
+    position: absolute;
+    left: var(--position, 50%);
+    background: var(--footer-background);
+    border-radius: 100%;
+    -webkit-animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+            animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+    transform: translate(-50%, 100%);
+  }
+  .bubblefooter .footer .content {
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 4rem;
+    padding: 2rem;
+    background: var(--footer-background);
+  }
+
+
+  @-webkit-keyframes bubble-size {
+    0%, 75% {
+      width: var(--size, 4rem);
+      height: var(--size, 4rem);
+    }
+    100% {
+      width: 0rem;
+      height: 0rem;
+    }
+  }
+
+  @keyframes bubble-size {
+    0%, 75% {
+      width: var(--size, 4rem);
+      height: var(--size, 4rem);
+    }
+    100% {
+      width: 0rem;
+      height: 0rem;
+    }
+  }
+  @-webkit-keyframes bubble-move {
+    0% {
+      bottom: -4rem;
+    }
+    100% {
+      bottom: var(--distance, 10rem);
+    }
+  }
+  @keyframes bubble-move {
+    0% {
+      bottom: -4rem;
+    }
+    100% {
+      bottom: var(--distance, 10rem);
+    }
+  }
+
+
+
+

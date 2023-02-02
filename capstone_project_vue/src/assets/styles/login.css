@@ -1,0 +1,171 @@
+body{
+    margin: 0; 
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    height: 100vh;
+    width: 100%;
+
+    background-color:#FAFBFF;   
+
+    margin-top:0px;
+    margin-left:0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+
+}
+
+.login-page{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height:100%;
+
+}
+
+.login-page .left-pic{
+    width: 100vh;
+    height: 100vh;
+}
+
+.login-page .left-pic img{
+    width:100%;
+    height:100%;
+}
+
+.login-page .right-form{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 70vh;
+    height: 100vh;
+
+    margin-top: 30px;
+
+    background-color: #FAFBFF;
+}
+
+.login-page .right-form .logo .logo-img{
+    margin-top: 80px;
+    width:192px;
+    height:192px;
+}
+
+.login-page .right-form .form-area{
+    margin-top: 45px;
+    width: 75%;
+    height: 60%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.login-page .right-form .form-area .welcome-msg{
+    width: 100%;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 19px;
+    text-align: center;
+    
+    
+
+    color: #171B72;
+
+}
+
+
+.login-page .right-form .form-area .login-form{
+    margin-top: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.login-page .right-form .form-area .login-form .loginInputLabel{
+    text-align: left;
+    margin-top: 5px;
+    height: 19px;
+    width:350px;
+}
+
+
+.login-page .right-form .form-area .login-form input{
+    height: 50px;
+    width:350px;
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+}
+
+.login-page .right-form .form-area .login-form .loginSubmitButton{
+    margin-top: 5px;
+}
+
+.login-page .right-form .form-area .login-form .loginSubmitButton button{
+    --c: #171B72;
+    color: var(--c);
+    background-color: white;
+    font-size: 16px;
+    border: 1px solid var(--c);
+    height: 50px;
+    width:350px;
+    border-radius: 3px;;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.login-page .right-form .form-area .login-form .loginSubmitButton span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.login-page .right-form .form-area .login-form .loginSubmitButton button:hover {
+    color: white;
+}
+.login-page .right-form .form-area .login-form .loginSubmitButton:hover span {
+    transform: translateY(0) scale(2);
+}
+.login-page .right-form .form-area .login-form .loginSubmitButton span:nth-child(1) {
+    --n: 1;
+}
+
+.login-page .right-form .form-area .login-form .loginSubmitButton span:nth-child(2) {
+    --n: 2;
+}
+
+.login-page .right-form .form-area .login-form .loginSubmitButton span:nth-child(3) {
+    --n: 3;
+}
+
+.login-page .right-form .form-area .login-form .loginSubmitButton span:nth-child(4) {
+    --n: 4;
+}
+
