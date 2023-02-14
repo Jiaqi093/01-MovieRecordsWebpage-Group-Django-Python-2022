@@ -2,7 +2,7 @@
 
 This project is mainly designed for users to record their favourite movie reviews. Their are three types of privacy for selection: private, 
 friends only or public. Users can rate, put comments, add picture, add title and add author for each movie record, and we might add a new 
-functionality "make friends" in the future.
+functionality "make friends" in the future if necessary.
 
 # To run the program:
 
